@@ -1,7 +1,5 @@
 - name: configuration server
   hosts: localhost
   tasks:
-    - name: Install Firefox
-      win_chocolatey: 
-        name: firefox
-        state: present
+    - name: installation de Vim
+      apt: name=vim
