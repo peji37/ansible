@@ -1,0 +1,5 @@
+- name: configuration server
+  hosts: localhost
+  tasks:
+    - name: installation de Vim
+      apt: name=vim
