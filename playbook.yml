@@ -1,8 +1,7 @@
-tasks:
- - name: - name: configuration server
-   hosts: test_windows
-   vars:
-     ansible_site_path: "c:\\inetpub\\wwwroot\\ansibletest"
-   tasks:
-     - name: installation de Vim
-       apt: name=vim
+- name: configuration server
+  hosts: localhost
+  tasks:
+    - name: Install Firefox
+      win_chocolatey: 
+        name: firefox
+        state: present
