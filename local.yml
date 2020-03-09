@@ -1,4 +1,4 @@
-- name: configuration server
+- name: pull configuration
   hosts: localhost
   tasks:
     - name: installation de Vim
