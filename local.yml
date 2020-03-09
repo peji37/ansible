@@ -1,5 +1,5 @@
 - name: configuration server
-  hosts: localhost
+  hosts: 192.168.21.128
   tasks:
     - name: installation de Vim
       apt: name=vim
