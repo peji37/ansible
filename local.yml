@@ -1,5 +1,5 @@
 - name: pull configuration
   hosts: localhost
   tasks:
-    - name: installation de Vim
-      apt: name=vim
+    - name: command de test
+      win_shell: echo 'aze'
