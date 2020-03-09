@@ -1,0 +1,3 @@
+---
+- name: downloadtest 
+  win_shell: echo 'test test test'
