@@ -1,5 +1,6 @@
 - name: pull configuration
   hosts: 192.168.21.128
+  strategy: debug
   tasks:
     - name: command de test
       win_shell: echo 'aze'
