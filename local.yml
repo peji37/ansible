@@ -6,7 +6,7 @@
   #  - name: command de test
   #   win_shell: echo 'aze'
     - name: Display the config
-        debug:
-          msg: "The hostname is {{ ansible_net_hostname }} and the OS is {{ ansible_net_version }}"
+      debug:
+        msg: "The hostname is {{ ansible_net_hostname }} and the OS is {{ ansible_net_version }}"
   roles:
     - roleTest
