@@ -3,10 +3,11 @@
   hosts: localhost
   #strategy: debug
   tasks:
-  #  - name: command de test
-  #   win_shell: echo 'aze'
     - name: Display the config
       debug:
         msg: "test"
+        
+  #  - name: command de test
+  #   win_shell: echo 'aze'
   roles:
     - roleTest
