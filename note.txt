@@ -1,2 +1,7 @@
 commmande pour tirer des configurations sur github :
-ansible-pull https://github.com/peji37/ansible.git
+ansible-pull -U https://github.com/peji37/ansible.git -vvvv //tire le playbook de la branche master
+arguments possibles :
+--checkout nomBranche //specifier une brabche/tag
+-i localhost //nom de l'inventaire à utiliser
+--accept-host-key //ajoute clé hote
+- node_type=${node_type} -e env=${env} //renseigne les arguments liés au playbook
