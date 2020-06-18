@@ -1,0 +1,2 @@
+commmande pour tirer des configurations sur github :
+ansible-pull https://github.com/peji37/ansible.git
