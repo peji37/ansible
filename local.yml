@@ -5,7 +5,7 @@
   tasks:
     - name: Display the config
       debug:
-        msg: "test"
+        msg: "test tag"
         
   #  - name: command de test
    #   win_shell: echo 'aze'
