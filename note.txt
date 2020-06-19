@@ -5,3 +5,4 @@ arguments possibles :
 -i localhost //nom de l'inventaire à utiliser
 --accept-host-key //ajoute clé hote
 - node_type=${node_type} -e env=${env} //renseigne les arguments liés au playbook
+***********
