@@ -13,8 +13,9 @@
 - name: install rabbitmq
   win_package:
     path: C:\ansible_windows\rabbitmq-server-3.8.5.exe
-    creates_path: C:\ansible_windows\rabbitmq-server-3.8.5.exe
-    creates_version: 3.8.5
+    #creates_path: C:\ansible_windows\rabbitmq-server-3.8.5.exe
+    #creates_version: 3.8.5
+    product_id: rabbitmq-server-3.8.5
     state: present
 - name: Install Apache
   apt: name=apache2 update_cache=yes state=latest
