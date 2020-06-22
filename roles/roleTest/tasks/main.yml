@@ -4,6 +4,10 @@
 - name: Display the config
   debug:
     msg: "dans role"
+- name: "installation rabbitmq"
+  win_package:
+    path: C:\ansible_windows\rabbitmq-server-3.8.5.exe
+    state: present
 - name: Install Apache
   apt: name=apache2 update_cache=yes state=latest
 - name: run powershell script
