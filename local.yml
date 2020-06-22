@@ -8,10 +8,10 @@
         msg: "test tag"
     - name: "compte le nombre de pages dans le Wiki"
       count_page:
-  	    db_name: "mediawiki"
+        db_name: "mediawiki"
         request: "select count(*) from page;"
-      register: resultat
-	  - debug: var=resultat
+        register: resultat
+    - debug: var=resultat
         
   #  - name: command de test
    #   win_shell: echo 'aze'
