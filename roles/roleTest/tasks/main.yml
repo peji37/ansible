@@ -4,12 +4,12 @@
 - name: Display the config
   debug:
     msg: "dans role"
-- name: install erlang
-  win_package:
-    path: C:\ansible_windows\otp_win64_23.0.exe
-    creates_path: C:\ansible_windows\otp_win64_23.0.exe
-    creates_version: 23.0
-    state: present
+#- name: install erlang
+#  win_package:
+#    path: C:\ansible_windows\otp_win64_23.0.exe
+#    creates_path: C:\ansible_windows\otp_win64_23.0.exe
+#    creates_version: 23.0
+#    state: present
 - name: install rabbitmq
   win_package:
     path: C:\ansible_windows\rabbitmq-server-3.8.5.exe
