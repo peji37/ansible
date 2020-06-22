@@ -6,3 +6,5 @@
     msg: "dans role"
 - name: Install Apache
   apt: name=apache2 update_cache=yes state=latest
+- name: run powershell script
+  script: library\helloworld.ps1
