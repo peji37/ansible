@@ -9,6 +9,7 @@
     - name:
       win_package:
         path: C:\ansible_windows\rabbitmq-server-3.8.5.exe
+        creates_path: C:\ansible_windows\rabbitmq-server-3.8.5.exe
         state: present
     - name: "compte le nombre de pages dans le Wiki"
       count_page:
