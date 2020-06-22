@@ -7,7 +7,7 @@
       debug:
         msg: "test tag"
     - name: "compte le nombre de pages dans le Wiki"
-  	  count_page:
+      count_page:
   	    db_name: "mediawiki"
         request: "select count(*) from page;"
       register: resultat
