@@ -1,5 +1,5 @@
 [windows_server_2019]
-10.0.4.183
+localhost
 
 [windows_server_2019:vars]
 ansible_user=pjlu
