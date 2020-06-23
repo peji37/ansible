@@ -4,5 +4,7 @@
 - name: Display the config
   debug:
     msg: "dans role"
-- name: Install Apache
-  apt: name=apache2 update_cache=yes state=latest
+- name: install iis
+  win_feature:
+    name: Web-Server
+    state: present
