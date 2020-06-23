@@ -1,6 +1,6 @@
 ---
-#- name: downloadtest 
-#  win_shell: echo 'test test test'
+- name: TEST 
+  win_shell: echo 'test test test'
 - name: Display the config
   debug:
     msg: "dans role"
