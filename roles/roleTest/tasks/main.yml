@@ -1,13 +1,10 @@
 ---
-- name: TEST 
-  win_shell: echo 'test test test'
 - name: Display the config
   debug:
     msg: "dans role"
 - name: install chrome
   win_package:
     path: C:\ansible_config\Library\ChromeSetup.exe
-    product_id: googleChrome
     arguments:
       - /install
       - /silent
