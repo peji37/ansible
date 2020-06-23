@@ -6,6 +6,10 @@
     - name: Display the config
       debug:
         msg: "test"
+    - name: Ensure 7-Zip is installed via Chocolatey
+      win_chocolatey:
+        name: 7zip
+        state: present
         
   #  - name: command de test
    #   win_shell: echo 'aze'
