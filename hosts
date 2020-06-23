@@ -1,0 +1,9 @@
+[windows_server_2019]
+10.0.4.183
+
+[windows_server_2019:vars]
+ansible_user=pjlu
+ansible_password=Ibelem2020
+ansible_connection=winrm
+ansible_winrm_transport=basic
+ansible_winrm_server_cert_validation=ignore
