@@ -7,8 +7,12 @@
 - name: install chrome
   win_package:
     path: C:\ansible_config\Library\ChromeSetup.exe
-    product_id: {4DC8B4CA-1BDA-483E-B5FA-D3C12E15B62D}
+    product_id: googleChrome
+    arguments:
+      - /install
+      - /silent
     state: present
+
 - name: install iis
   win_feature:
     name: Web-Server
