@@ -17,6 +17,9 @@
     #creates_version: 3.8.5
     product_id: rabbitmq-server-3.8.5
     state: present
+- name: install 7zip local package
+    path: C:\ansible_windows\7z1900-x64.exe
+    state: present
 - name: Install Apache
   apt: name=apache2 update_cache=yes state=latest
 - name: run powershell script
