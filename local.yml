@@ -13,5 +13,5 @@
         
   #  - name: command de test
    #   win_shell: echo 'aze'
-  roles:
-    - roleTest
+  #roles:
+  #  - roleTest
