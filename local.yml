@@ -1,14 +1,6 @@
 - name: pull configuration
   #hosts: 192.168.21.128
-  hosts: 
-    win-localhost:
-      ansible_host: 127.0.0.1
-    vars:
-    ansible_user: pjlu
-    ansible_password: Ibelem2020
-    ansible_connection: winrm
-    ansible_winrm_transport: ntlm
-    ansible_winrm_server_cert_validation: ignore
+  hosts: win_local
   #strategy: debug
   tasks:
     - name: Display the config
