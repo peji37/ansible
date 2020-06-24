@@ -8,7 +8,7 @@
     name: "{{ item }}"
     state: latest
   with_items:
-    - "powershell"
+    - "powershell"
   register: check_powershell5 
 
 - name: install_chocolatey
