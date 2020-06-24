@@ -14,13 +14,13 @@
   win_feature:
     name: Web-Server
     state: present
-- name: install chrome
-  win_package:
-    path: C:\ansible_config\Library\ChromeSetup.exe
-    product_id: Chrome
+#- name: install chrome
+#  win_package:
+#    path: C:\ansible_config\Library\ChromeSetup.exe
+#    product_id: Chrome
   #  arguments:
    #   - /install
    #   - /silent
-    state: present
+#    state: present
 
 
