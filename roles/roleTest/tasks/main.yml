@@ -2,22 +2,25 @@
 - name: Display the config
   debug:
     msg: "dans role"
-    
+
 - name: Ensure 7-Zip is installed via Chocolatey
   win_chocolatey:
     name: 7zip
     state: present
-- name: install chrome
-  win_package:
-    path: C:\ansible_config\Library\ChromeSetup.exe
-    arguments:
-      - /install
-      - /silent
-    state: present
+
+
 
 - name: install iis
   win_feature:
     name: Web-Server
+    state: present
+- name: install chrome
+  win_package:
+    path: C:\ansible_config\Library\ChromeSetup.exe
+    product_id: Chrome
+  #  arguments:
+   #   - /install
+   #   - /silent
     state: present
 
 
