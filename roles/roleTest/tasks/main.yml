@@ -4,12 +4,12 @@
     msg: "dans role"
   
 - name: install powershell 
-  win_chocolatey:
-    name: "{{ item }}"
-    state: latest
-  with_items:
-    - "powershell"
-  register: check_powershell5 
+  win_chocolatey:
+    name: "{{ item }}"
+    state: latest
+  with_items:
+    - "powershell"
+  register: check_powershell5 
 
 - name: install_chocolatey
   win_chocolatey:
