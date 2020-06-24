@@ -2,6 +2,13 @@
 - name: Display the config
   debug:
     msg: "dans role"
+- name: set the default shell to powershell
+  win_regedit:
+    path: HKLM:\SOFTWARE\OpenSSH
+    name: DefaultShell
+    data: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+    type: string
+    state: present  
 - name: install powershell
   win_chocolatey:
     name: "{{ item }}"
