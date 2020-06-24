@@ -2,7 +2,7 @@
   #hosts: 192.168.21.128
   hosts: 
     win-localhost:
-      ansible_host:127.0.0.1
+      ansible_host: 127.0.0.1
     vars:
     ansible_user: pjlu
     ansible_password: Ibelem2020
