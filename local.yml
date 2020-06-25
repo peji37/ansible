@@ -1,6 +1,6 @@
 - name: pull configuration
   #hosts: 192.168.21.128
-  hosts: list_host
+  hosts: win_server,win_client
   #strategy: debug
   tasks:
     - name: Display the config
