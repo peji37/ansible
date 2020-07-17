@@ -24,6 +24,9 @@
     include_sub_features: yes
     include_management_tools: yes
   register: win_feature
+- name: install rabbitMq
+  win_chocolatey:
+    name: rabbitmq
 #- name: install chrome
 #  win_package:
 #    path: C:\ansible_config\Library\ChromeSetup.exe
