@@ -27,6 +27,9 @@
 - name: install rabbitMq
   win_chocolatey:
     name: rabbitmq
+- name: install framework4.7.1
+  win_chocolatey:
+    name: dotnet4.7.1
 #- name: install chrome
 #  win_package:
 #    path: C:\ansible_config\Library\ChromeSetup.exe
